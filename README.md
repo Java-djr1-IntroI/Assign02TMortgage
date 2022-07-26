@@ -16,13 +16,7 @@
 
 2.  Program conditionally using a single-alternative if and nested ifs
 
-3.  Introduce built-in functions from the cmath library
-
-If you run into any problems with this assignment, it is important that
-you come and see me or a TA [early]{.ul} so that we can help. Also, it
-is very important for you to do this assignment on your own. Every
-assignment you will be doing from now on will require the techniques you
-learned in class and in the lab.
+3.  Introduce built-in methods like Math.pow
 
 **Information on buying a house**
 
@@ -56,7 +50,7 @@ P = L\[m(1 + m)<sup>n</sup>\]/\[(1 + m)<sup>n</sup> - 1\], where
 **L** is the loan amount in dollars
 
 **m** is the monthly interest rate (the yearly interest rate will be
-entered as example, 6.0,\
+entered as example, 6.0,
 meaning 6%, so m would need to be .06 / 12 or .005 for the above formula
 to work)
 
@@ -64,7 +58,7 @@ to work)
 
 **Here is the problem that you are to solve**
 
-You are to write a complete C++ program fully documented that allows the
+You are to write a complete program fully documented that allows the
 user the ability to enter a purchase price in dollars (e.g. 115000.00), a
 down payment (e.g. 15000.00), a yearly interest rate (e.g. 3.5), and a
 number of years the loan is for (e.g. 30). You must then calculate the
@@ -100,8 +94,7 @@ Total Interest Paid: $61656.1
 **Note1:** Each inputted value is to be \> 0.0. If an inputted value is
 entered incorrectly, output the message "Incorrect Input -- Terminating
 Program" Here is an example. You are to terminate the program
-immediately when an illegal input occurs. **Further, there is to be only
-one return statement at the end of your program.**
+immediately when an illegal input occurs. 
 
 <pre>
 *******************
@@ -114,16 +107,15 @@ Enter Interest Rate: %<b>-1.0</b>
 Incorrect Input - Terminating Program
 </pre>
 
-**Note2:** Do not use any C++ constructs not introduced in the class
+**Note2:** Do not use any Java constructs not introduced in the class
 thus far.**\
 **
 
-You will need to use the pow function. In order to use the pow function,
-you will need to include the library cmath by using the preprocessor
-directive #include \<cmath>. The pow function accepts two doubles and
+You will need to use the method pow from java.lang.Math. In order to use the method pow,
+you will need to import the library using <b>import java.lang.Math</b>. pow accepts two doubles and
 returns a double. As an example,
 
-cout \<\< pow (2.0, 3.0); // outputs 8.0 because 2.0<sup>3.0</sup> equals 8.0
+System.out.println (Math.pow (2.0, 3.0)); // outputs 8.0 because 2.0<sup>3.0</sup> equals 8.0
 
 **To complete this assignment you must submit the following:**
 
@@ -142,7 +134,7 @@ cout \<\< pow (2.0, 3.0); // outputs 8.0 because 2.0<sup>3.0</sup> equals 8.0
 
     c.  Make sure that your program compiles and runs correctly with no
         errors and no warnings. If you get any errors, double check that
-        you typed everything correctly. Be aware that C++ is
+        you typed everything correctly. Be aware that Java is
         case-sensitive.
 
 2.   **An electronic copy of your program (punetidAssign02Mortgage.pdf) is 
